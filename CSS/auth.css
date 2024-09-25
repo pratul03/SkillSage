@@ -1,0 +1,138 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+body {
+    transition: all ease-in-out 0.3s;
+}
+/* General styles for the navbar */
+.navbar {
+    background-color: rgba(239, 239, 239, 0.61);
+    padding: 10px 20px;
+    -webkit-box-shadow: 3px 3px 13.5px -3px #dcdcdc;
+    -moz-box-shadow: 3px 3px 13.5px -3px #464646;
+    box-shadow: 3px 3px 13.5px -3px #464646;
+    margin-bottom: 5px;
+}
+
+.navbar-brand {
+    color: #000;
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+    .navbar-brand:hover {
+        color: #0752ee;
+    }
+
+/* Navbar links */
+.nav-link {
+    color: #000;
+    font-size: 1.1em;
+    margin-right: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+    .nav-link:hover {
+        color: #0752ee;
+        transform: translateY(-2px);
+    }
+
+/* Navbar toggler button */
+.navbar-toggler {
+    border: none;
+    background: #4A6CF7;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28155, 155, 155, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Dropdown styling */
+.dropdown-menu {
+    padding:4px 6px;
+    margin-right:10px;
+    background-color: rgba(255, 255, 255, 1); /* White background */
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.19);
+}
+
+/* Active dropdown item (default state) */
+.dropdown-item {
+    font-weight:300;
+    color: #000; /* Black text */
+    padding: 10px 20px;
+    transition:all 0.3s linear;
+    border-radius:8px;
+}
+
+    /* Hover state for dropdown items */
+    .dropdown-item:hover {
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.1); /* Light white with less opacity */
+        color: #0752ee; /* Keep the text black */
+    }
+/* Button styling for Login and Register buttons */
+.btn-outline-success {
+    color: #000;
+    border-color: #000;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+    .btn-outline-success:hover {
+        background-color: #4A6CF7;
+        color: #000;
+        border-color: #fff;
+    }
+
+/* Ensures smooth collapse animation */
+.collapse {
+    transition: height 0.3s ease-out;
+}
+.btn {
+    font-weight: 300;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    transition: all linear 0.3s;
+    border: 0.5px solid #b7dfff;
+}
+.btn:hover{
+    font-weight:400;
+    border:1px solid black;
+}
+
+.btn_register {
+    font-weight: 300;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    transition: all ease-in-out 0.3s;
+}
+
+.btn_register:hover{
+    font-weight:500
+}
+
+/* Responsive design adjustments */
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .dropdown-menu {
+        text-align: center;
+    }
+}
