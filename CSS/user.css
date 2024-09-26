@@ -1,12 +1,33 @@
-﻿/* Custom Navbar Styling */
+﻿@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    transition: all ease-in-out 0.3s;
+    background-color: #f4f7fc;
+    padding-top: 100px;
+}
+
+/* Custom Navbar Styling */
 .navbar {
-    background-color: white;
-    border-bottom: 1px solid black;
+    background-color: rgba(239, 239, 239, 0.61);
+    padding: 10px 20px;
+    -webkit-box-shadow: 3px 3px 13.5px -3px #dcdcdc;
+    -moz-box-shadow: 3px 3px 13.5px -3px #464646;
+    box-shadow: 3px 3px 13.5px -3px #464646;
+    margin-bottom: 5px;
 }
 
 .navbar-brand {
-    color: black !important;
-    font-size: 1.8rem;
+    color: #000 !important;
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 .nav-link {
@@ -47,10 +68,6 @@ table {
     }
 
 /* Background */
-body {
-    background-color: #f4f7fc;
-    padding-top: 60px;
-}
 
 .container {
     margin-top: 20px;
@@ -64,26 +81,26 @@ body {
     margin: 5px;
 }
 
-#LinkButton1 {
-    color: black;
-    text-decoration: none;
-    text-transform: capitalize;
-}
+
 
 /* CSS */
-.logout-button {
-    background-color: #ffa095; /* Red background */
+.logout-button {    text-decoration: none;
+    text-transform: capitalize;
+    background-color: #ff4949; /* Red background */
     color: white; /* White text */
     border: none; /* Remove border */
-    padding: 12px 24px; /* Add padding */
+    padding: 10px 20px; /* Add padding */
     font-size: 16px; /* Increase font size */
     border-radius: 5px; /* Rounded corners */
     cursor: pointer; /* Change cursor on hover */
-    transition: background-color 0.3s ease; /* Smooth transition */
+    transition: all 0.3s linear; /* Smooth transition */
 }
 
     .logout-button:hover {
-        color: #fc1f06; /* Darker red on hover */
+        border: 0.3px solid #ff4949;
+        font-weight:400;
+        background-color: #ffdada;
+        color: #ff0000; /* Darker red on hover */
     }
 
     .logout-button:active {

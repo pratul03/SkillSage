@@ -1,4 +1,17 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+body {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url('../icons/bg.jpg'); /* Prevents background repeating */
+    background-size: cover; /* Ensures the gradient covers the entire body */
+}
 
 .container-fluid {
     display: flex;
@@ -10,29 +23,30 @@
     margin: 10px;
     padding: 20px;
     border-radius: 10px;
+    background: rgba(255,255,255,0.35);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.175);
     border: 1px solid #c0c0c0;
 }
 
 .form-text {
-    font-family: "Jura", sans-serif;
     font-weight: 500;
 }
 
 .error-message {
-    font-family: "Jura", sans-serif;
+    
     font-weight: 600;
     margin-left: 5px;
 }
 
 label {
-    font-family: "Jura", sans-serif;
     font-weight: 600;
     margin: 10px 0px;
 }
 
 .form-control, .form-select {
-    font-family: "Jura", sans-serif;
-    border-radius: 10px !important;
+    border-radius: 6px !important;
 }
 
 

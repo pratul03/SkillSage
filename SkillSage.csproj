@@ -85,13 +85,17 @@
     <Content Include="CSS\indexMaster.css" />
     <Content Include="CSS\JobPost.css" />
     <Content Include="CSS\login.css" />
+    <Content Include="CSS\services.css" />
     <Content Include="CSS\signup.css" />
     <Content Include="CSS\user.css" />
     <Content Include="CSS\userProfile.css" />
+    <Content Include="CSS\viewJob.css" />
     <Content Include="Dashboard.aspx" />
     <Content Include="EmployerDashboard.aspx" />
     <Content Include="icons\about.jpg" />
     <Content Include="icons\ai-services.jpg" />
+    <Content Include="icons\services.jpg" />
+    <Content Include="icons\web-dev.png" />
     <Content Include="icons\bussiness.jpg" />
     <Content Include="icons\content-writing.jpg" />
     <Content Include="icons\counselling.jpg" />
@@ -105,6 +109,7 @@
     <Content Include="Index.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="PostJob.aspx" />
+    <Content Include="Services.aspx" />
     <Content Include="SignUp.aspx" />
     <Content Include="SignUpEmployer.aspx" />
     <Content Include="UserDetails.aspx" />
@@ -190,6 +195,13 @@
     </Compile>
     <Compile Include="IndexPage.Master.designer.cs">
       <DependentUpon>IndexPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Services.aspx.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services.aspx.designer.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
     </Compile>
     <Compile Include="SignUp.aspx.cs">
       <DependentUpon>SignUp.aspx</DependentUpon>
